@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a7aff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Pattern for cleaning texture -->
+    <pattern id="cleaning-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <circle cx="50" cy="50" r="40" fill="white" fill-opacity="0.05" />
+      <circle cx="0" cy="0" r="30" fill="white" fill-opacity="0.05" />
+      <circle cx="100" cy="100" r="30" fill="white" fill-opacity="0.05" />
+      <circle cx="0" cy="100" r="20" fill="white" fill-opacity="0.05" />
+      <circle cx="100" cy="0" r="20" fill="white" fill-opacity="0.05" />
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)" />
+  
+  <!-- Pattern overlay -->
+  <rect width="1920" height="1080" fill="url(#cleaning-pattern)" />
+  
+  <!-- Abstract cleaning elements -->
+  <g opacity="0.2">
+    <!-- Bubbles -->
+    <circle cx="300" cy="200" r="80" fill="white" />
+    <circle cx="350" cy="150" r="60" fill="white" />
+    <circle cx="250" cy="150" r="50" fill="white" />
+    
+    <circle cx="1600" cy="800" r="100" fill="white" />
+    <circle cx="1650" cy="750" r="70" fill="white" />
+    <circle cx="1550" cy="750" r="60" fill="white" />
+    
+    <circle cx="1200" cy="300" r="90" fill="white" />
+    <circle cx="1250" cy="250" r="65" fill="white" />
+    <circle cx="1150" cy="250" r="55" fill="white" />
+    
+    <circle cx="500" cy="900" r="70" fill="white" />
+    <circle cx="550" cy="850" r="50" fill="white" />
+    <circle cx="450" cy="850" r="40" fill="white" />
+  </g>
+  
+  <!-- Sparkle elements -->
+  <g fill="white" opacity="0.6">
+    <path d="M800 200L820 240L840 200L820 160Z" />
+    <path d="M1400 400L1420 440L1440 400L1420 360Z" />
+    <path d="M600 600L620 640L640 600L620 560Z" />
+    <path d="M1200 800L1220 840L1240 800L1220 760Z" />
+    <path d="M400 300L420 340L440 300L420 260Z" />
+    <path d="M1600 500L1620 540L1640 500L1620 460Z" />
+    <path d="M900 900L920 940L940 900L920 860Z" />
+  </g>
+  
+  <!-- Abstract cleaning tools silhouettes -->
+  <g fill="white" opacity="0.1">
+    <!-- Spray bottle silhouette -->
+    <path d="M200 700 L250 700 L260 650 L240 630 L220 650 L210 650 Z" />
+    
+    <!-- Mop silhouette -->
+    <path d="M1700 300 L1720 300 L1720 500 L1800 600 L1620 600 L1700 500 Z" />
+    
+    <!-- Vacuum silhouette -->
+    <path d="M400 800 C400 750, 450 750, 450 800 L500 900 L350 900 Z" />
+  </g>
+  
+  <!-- Subtle wave patterns -->
+  <path d="M0 400 C200 350, 400 450, 600 400 C800 350, 1000 450, 1200 400 C1400 350, 1600 450, 1800 400 C2000 350, 2200 450, 2400 400 V1080 H0 Z" fill="white" opacity="0.05" />
+  
+  <path d="M0 600 C200 550, 400 650, 600 600 C800 550, 1000 650, 1200 600 C1400 550, 1600 650, 1800 600 C2000 550, 2200 650, 2400 600 V1080 H0 Z" fill="white" opacity="0.07" />
+</svg>

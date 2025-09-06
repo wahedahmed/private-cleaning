@@ -1,0 +1,56 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- تعريف التدرجات والأنماط -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+    
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f0f0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- خلفية رئيسية -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  
+  <!-- خط متصل يمثل مسار العملية -->
+  <path d="M 200,540 C 400,440 600,640 800,540 C 1000,440 1200,640 1400,540 C 1600,440 1800,540 1900,540" 
+        stroke="#0078d4" stroke-width="3" fill="none" stroke-dasharray="10,10" opacity="0.2"/>
+  
+  <!-- دوائر تمثل خطوات العملية -->
+  <g opacity="0.15">
+    <circle cx="200" cy="540" r="50" fill="#0078d4"/>
+    <circle cx="800" cy="540" r="50" fill="#0078d4"/>
+    <circle cx="1400" cy="540" r="50" fill="#0078d4"/>
+    <circle cx="1900" cy="540" r="50" fill="#0078d4"/>
+    
+    <!-- أرقام داخل الدوائر -->
+    <text x="190" y="555" font-family="Arial" font-size="30" fill="#ffffff" font-weight="bold">1</text>
+    <text x="790" y="555" font-family="Arial" font-size="30" fill="#ffffff" font-weight="bold">2</text>
+    <text x="1390" y="555" font-family="Arial" font-size="30" fill="#ffffff" font-weight="bold">3</text>
+    <text x="1890" y="555" font-family="Arial" font-size="30" fill="#ffffff" font-weight="bold">4</text>
+  </g>
+  
+  <!-- أشكال زخرفية خفيفة -->
+  <g opacity="0.05">
+    <!-- مربعات بزوايا دائرية -->
+    <rect x="100" y="200" width="100" height="100" rx="15" ry="15" fill="#0078d4"/>
+    <rect x="1700" y="200" width="100" height="100" rx="15" ry="15" fill="#0078d4"/>
+    <rect x="100" y="800" width="100" height="100" rx="15" ry="15" fill="#0078d4"/>
+    <rect x="1700" y="800" width="100" height="100" rx="15" ry="15" fill="#0078d4"/>
+    
+    <!-- دوائر زخرفية -->
+    <circle cx="300" cy="300" r="80" fill="none" stroke="#0078d4" stroke-width="2"/>
+    <circle cx="1600" cy="800" r="80" fill="none" stroke="#0078d4" stroke-width="2"/>
+    <circle cx="300" cy="800" r="80" fill="none" stroke="#0078d4" stroke-width="2"/>
+    <circle cx="1600" cy="300" r="80" fill="none" stroke="#0078d4" stroke-width="2"/>
+  </g>
+  
+  <!-- خطوط موجية خفيفة في الخلفية -->
+  <path d="M0,50 C300,100 600,0 900,50 C1200,100 1500,0 1800,50 L1920,50 L1920,0 L0,0 Z" 
+        fill="#f0f0f0" opacity="0.5"/>
+  <path d="M0,1030 C300,980 600,1080 900,1030 C1200,980 1500,1080 1800,1030 L1920,1030 L1920,1080 L0,1080 Z" 
+        fill="#f0f0f0" opacity="0.5"/>
+</svg>

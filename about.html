@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlElement">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن | شركة التنظيف المتميزة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Tajawal للعربية و Poppins للإنجليزية -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="cropped-cleaning-logo-01-4-170x67.png" alt="شعار شركة التنظيف">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html" data-en="Home">الرئيسية</a></li>
+                    <li><a href="about.html" class="active" data-en="About Us">من نحن</a></li>
+                    <li><a href="services.html" data-en="Services">خدماتنا</a></li>
+                    <li><a href="contact.html" data-en="Contact Us">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="langToggle" onclick="toggleLanguage()">
+                    <span class="lang-text">English</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم البانر الرئيسي -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 data-en="About Us">من نحن</h1>
+            <div class="breadcrumbs">
+                <a href="index.html" data-en="Home">الرئيسية</a> / <span data-en="About Us">من نحن</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم قصتنا -->
+    <section class="about-story">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 data-en="Our Story">قصتنا</h2>
+                    <p data-en="Founded in 2010, our cleaning company started with a simple mission: to provide exceptional cleaning services that exceed customer expectations. What began as a small family business has grown into a trusted name in the cleaning industry, serving both residential and commercial clients.">تأسست شركتنا للتنظيف في عام 2010 بمهمة بسيطة: تقديم خدمات تنظيف استثنائية تفوق توقعات العملاء. ما بدأ كشركة عائلية صغيرة نما ليصبح اسمًا موثوقًا به في صناعة التنظيف، حيث نخدم العملاء السكنيين والتجاريين.</p>
+                    <p data-en="Over the years, we have built our reputation on quality, reliability, and attention to detail. We understand that a clean environment is essential for health, productivity, and peace of mind. That's why we approach each cleaning project with dedication and professionalism.">على مر السنين، بنينا سمعتنا على الجودة والموثوقية والاهتمام بالتفاصيل. نحن ندرك أن البيئة النظيفة ضرورية للصحة والإنتاجية وراحة البال. لهذا السبب نتعامل مع كل مشروع تنظيف بتفانٍ واحترافية.</p>
+                    <p data-en="Today, we are proud to be a leading cleaning service provider, known for our commitment to excellence and customer satisfaction. Our team of trained professionals continues to uphold the values that have guided us from the beginning.">اليوم، نحن فخورون بكوننا مزودًا رائدًا لخدمات التنظيف، معروفين بالتزامنا بالتميز ورضا العملاء. يواصل فريقنا من المحترفين المدربين الحفاظ على القيم التي وجهتنا منذ البداية.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-story.jpg" alt="قصة شركتنا" data-en-alt="Our Company Story">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم رؤيتنا ومهمتنا -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="vm-grid">
+                <div class="vision-box">
+                    <div class="vm-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2 data-en="Our Vision">رؤيتنا</h2>
+                    <p data-en="To be the most trusted and respected cleaning service provider, setting the industry standard for quality, innovation, and customer satisfaction.">أن نكون مزود خدمة التنظيف الأكثر ثقة واحترامًا، ونضع معيارًا للصناعة من حيث الجودة والابتكار ورضا العملاء.</p>
+                </div>
+                <div class="mission-box">
+                    <div class="vm-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h2 data-en="Our Mission">مهمتنا</h2>
+                    <p data-en="To deliver exceptional cleaning services that create healthier, more comfortable environments for our clients, while maintaining the highest standards of professionalism, integrity, and environmental responsibility.">تقديم خدمات تنظيف استثنائية تخلق بيئات أكثر صحة وراحة لعملائنا، مع الحفاظ على أعلى معايير الاحترافية والنزاهة والمسؤولية البيئية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم قيمنا -->
+    <section class="our-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Values">قيمنا</h2>
+                <p class="section-subtitle" data-en="The principles that guide everything we do">المبادئ التي توجه كل ما نقوم به</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 data-en="Excellence">التميز</h3>
+                    <p data-en="We strive for excellence in every aspect of our service, from the products we use to the results we deliver.">نسعى للتميز في كل جانب من جوانب خدمتنا، من المنتجات التي نستخدمها إلى النتائج التي نقدمها.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 data-en="Integrity">النزاهة</h3>
+                    <p data-en="We conduct our business with honesty, transparency, and ethical practices, building trust with our clients and employees.">ندير أعمالنا بصدق وشفافية وممارسات أخلاقية، مما يبني الثقة مع عملائنا وموظفينا.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-en="Respect">الاحترام</h3>
+                    <p data-en="We treat our clients, employees, and partners with respect and dignity, valuing diverse perspectives and experiences.">نعامل عملائنا وموظفينا وشركائنا باحترام وكرامة، ونقدر وجهات النظر والتجارب المتنوعة.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-en="Sustainability">الاستدامة</h3>
+                    <p data-en="We are committed to environmentally responsible practices, using eco-friendly products and methods whenever possible.">نحن ملتزمون بالممارسات المسؤولة بيئيًا، واستخدام المنتجات والأساليب الصديقة للبيئة كلما أمكن ذلك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم فريقنا -->
+    <section class="our-team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Team">فريقنا</h2>
+                <p class="section-subtitle" data-en="Meet the professionals behind our exceptional service">تعرف على المحترفين وراء خدمتنا الاستثنائية</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team-1.jpg" alt="عضو الفريق" data-en-alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3 data-en="Ahmed Hassan">أحمد حسن</h3>
+                        <p class="member-position" data-en="Founder & CEO">المؤسس والرئيس التنفيذي</p>
+                        <p class="member-bio" data-en="With over 15 years of experience in the cleaning industry, Ahmed leads our company with passion and vision.">مع أكثر من 15 عامًا من الخبرة في صناعة التنظيف، يقود أحمد شركتنا بشغف ورؤية.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team-2.jpg" alt="عضو الفريق" data-en-alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3 data-en="Layla Mahmoud">ليلى محمود</h3>
+                        <p class="member-position" data-en="Operations Manager">مديرة العمليات</p>
+                        <p class="member-bio" data-en="Layla ensures that all our cleaning operations run smoothly and efficiently, maintaining our high standards of quality.">تضمن ليلى أن جميع عمليات التنظيف لدينا تعمل بسلاسة وكفاءة، مع الحفاظ على معاييرنا العالية للجودة.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="images/team-3.jpg" alt="عضو الفريق" data-en-alt="Team Member">
+                    </div>
+                    <div class="member-info">
+                        <h3 data-en="Omar Samir">عمر سمير</h3>
+                        <p class="member-position" data-en="Training Specialist">أخصائي التدريب</p>
+                        <p class="member-bio" data-en="Omar is responsible for training our cleaning staff, ensuring they have the skills and knowledge to deliver exceptional service.">عمر مسؤول عن تدريب فريق التنظيف لدينا، مما يضمن امتلاكهم للمهارات والمعرفة اللازمة لتقديم خدمة استثنائية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإنجازات والاعتمادات -->
+    <section class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Achievements">إنجازاتنا</h2>
+                <p class="section-subtitle" data-en="Recognition of our commitment to excellence">اعتراف بالتزامنا بالتميز</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 data-en="Best Cleaning Service 2022">أفضل خدمة تنظيف 2022</h3>
+                    <p data-en="Awarded by the National Association of Cleaning Services for excellence in customer satisfaction and service quality.">منحت من قبل الجمعية الوطنية لخدمات التنظيف للتميز في رضا العملاء وجودة الخدمة.</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 data-en="ISO 9001 Certified">حاصلون على شهادة الأيزو 9001</h3>
+                    <p data-en="Our quality management system meets international standards, ensuring consistent high-quality service delivery.">نظام إدارة الجودة لدينا يلبي المعايير الدولية، مما يضمن تقديم خدمة عالية الجودة باستمرار.</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="Green Cleaning Certified">معتمدون في التنظيف الأخضر</h3>
+                    <p data-en="Recognized for our commitment to environmentally friendly cleaning practices and sustainable operations.">معترف بنا لالتزامنا بممارسات التنظيف الصديقة للبيئة والعمليات المستدامة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشهادات -->
+    <section class="testimonials enhanced-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Client Testimonials">آراء العملاء</h2>
+                <p class="section-subtitle" data-en="What our clients say about our cleaning services">ما يقوله عملاؤنا عن خدمات التنظيف لدينا</p>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-item">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p data-en="I've been using their services for my home for over two years now. The team is always punctual, professional, and thorough. My house has never been cleaner!">لقد كنت أستخدم خدماتهم لمنزلي لأكثر من عامين الآن. الفريق دائمًا دقيق في المواعيد، محترف، ودقيق. لم يكن منزلي أنظف من قبل!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-1.jpg" alt="صورة العميل" class="author-image" data-en-alt="Client Photo">
+                        <div class="author-details">
+                            <h4 data-en="Sara Ahmed">سارة أحمد</h4>
+                            <p data-en="Residential Client">عميلة سكنية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p data-en="As a business owner, I need a cleaning service I can rely on. This company has exceeded my expectations. They are thorough, consistent, and their attention to detail is impressive.">بصفتي صاحب عمل، أحتاج إلى خدمة تنظيف يمكنني الاعتماد عليها. لقد تجاوزت هذه الشركة توقعاتي. إنهم دقيقون ومتسقون واهتمامهم بالتفاصيل مثير للإعجاب.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-2.jpg" alt="صورة العميل" class="author-image" data-en-alt="Client Photo">
+                        <div class="author-details">
+                            <h4 data-en="Karim Mostafa">كريم مصطفى</h4>
+                            <p data-en="Commercial Client">عميل تجاري</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p data-en="After renovation, our home was a mess. The post-construction cleaning team did an amazing job. They removed all the dust and debris, making our home look brand new.">بعد التجديد، كان منزلنا فوضويًا. قام فريق تنظيف ما بعد البناء بعمل رائع. لقد أزالوا كل الغبار والحطام، مما جعل منزلنا يبدو جديدًا تمامًا.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4 data-en="Nour and Hany">نور وهاني</h4>
+                        <p data-en="Homeowners">أصحاب منزل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشركاء -->
+    <section class="our-partners">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Partners">شركاؤنا</h2>
+                <p class="section-subtitle" data-en="Trusted companies we work with">الشركات الموثوقة التي نعمل معها</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="images/partner-1.png" alt="شريك" data-en-alt="Partner">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner-2.png" alt="شريك" data-en-alt="Partner">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner-3.png" alt="شريك" data-en-alt="Partner">
+                </div>
+                <div class="partner-logo">
+                    <img src="images/partner-4.png" alt="شريك" data-en-alt="Partner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم العملاء الرئيسيين -->
+    <section class="key-clients">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Key Clients">عملاؤنا الرئيسيون</h2>
+                <p class="section-subtitle" data-en="Businesses that trust our cleaning expertise">الشركات التي تثق بخبرتنا في التنظيف</p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-item">
+                    <div class="client-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 data-en="Al Madar Hotels Group">مجموعة فنادق المدار</h3>
+                    <p data-en="Providing comprehensive cleaning services for a chain of 5-star hotels across the country.">نقدم خدمات تنظيف شاملة لسلسلة من الفنادق ذات الخمس نجوم في جميع أنحاء البلاد.</p>
+                </div>
+                <div class="client-item">
+                    <div class="client-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3 data-en="Al Shifa Medical Centers">مراكز الشفاء الطبية</h3>
+                    <p data-en="Specialized sanitization and cleaning services for healthcare facilities, ensuring the highest standards of hygiene.">خدمات تعقيم وتنظيف متخصصة للمرافق الصحية، مما يضمن أعلى معايير النظافة.</p>
+                </div>
+                <div class="client-item">
+                    <div class="client-icon">
+                        <i class="fas fa-shopping-mall"></i>
+                    </div>
+                    <h3 data-en="Al Noor Shopping Malls">مراكز النور التجارية</h3>
+                    <p data-en="Daily cleaning and maintenance services for large commercial spaces with high foot traffic.">خدمات تنظيف وصيانة يومية للمساحات التجارية الكبيرة ذات الحركة المرورية العالية.</p>
+                </div>
+                <div class="client-item">
+                    <div class="client-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 data-en="Al Mostaqbal Educational Group">مجموعة المستقبل التعليمية</h3>
+                    <p data-en="Comprehensive cleaning solutions for schools and educational institutions, creating healthy learning environments.">حلول تنظيف شاملة للمدارس والمؤسسات التعليمية، مما يخلق بيئات تعلم صحية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready to Experience Our Cleaning Services?">هل أنت مستعد لتجربة خدمات التنظيف لدينا؟</h2>
+                <p data-en="Contact us today to schedule a cleaning service or request a free quote.">اتصل بنا اليوم لجدولة خدمة تنظيف أو طلب عرض سعر مجاني.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-en="Contact Us">اتصل بنا</a>
+                    <a href="services.html" class="btn btn-secondary" data-en="Our Services">خدماتنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="cropped-cleaning-logo-01-4-170x67.png" alt="شعار شركة التنظيف" class="footer-logo">
+                    <p data-en="Professional cleaning services with the highest standards of quality and customer satisfaction">خدمات تنظيف احترافية بأعلى معايير الجودة ورضا العملاء</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-en="Quick Links">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home">الرئيسية</a></li>
+                        <li><a href="about.html" data-en="About Us">من نحن</a></li>
+                        <li><a href="services.html" data-en="Services">خدماتنا</a></li>
+                        <li><a href="contact.html" data-en="Contact Us">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3 data-en="Our Services">خدماتنا</h3>
+                    <ul>
+                        <li><a href="services.html#residential" data-en="Residential Cleaning">تنظيف المنازل</a></li>
+                        <li><a href="services.html#commercial" data-en="Commercial Cleaning">تنظيف المكاتب والشركات</a></li>
+                        <li><a href="services.html#furniture" data-en="Furniture & Upholstery">تنظيف الأثاث والمفروشات</a></li>
+                        <li><a href="services.html#post-construction" data-en="Post-Construction Cleaning">تنظيف ما بعد البناء</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-en="Contact Us">اتصل بنا</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@cleaningcompany.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="123 Main Street, City, Country">123 الشارع الرئيسي، المدينة، البلد</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright" data-en="© 2023 Cleaning Company. All Rights Reserved.">© 2023 شركة التنظيف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- سكريبت جافا سكريبت -->
+    <script src="js/script.js"></script>
+</body>
+</html>

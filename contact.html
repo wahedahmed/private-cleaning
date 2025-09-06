@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlElement">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | Contact Us - شركة التنظيف المتميزة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Tajawal للعربية و Poppins للإنجليزية -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="cropped-cleaning-logo-01-4-170x67.png" alt="شعار شركة التنظيف">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html" data-en="Home">الرئيسية</a></li>
+                    <li><a href="about.html" data-en="About Us">من نحن</a></li>
+                    <li><a href="services.html" data-en="Services">خدماتنا</a></li>
+                    <li><a href="contact.html" class="active" data-en="Contact Us">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="langToggle" onclick="toggleLanguage()">
+                    <span class="lang-text">English</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم البانر الرئيسي -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 data-en="Contact Us">اتصل بنا</h1>
+            <div class="breadcrumbs">
+                <a href="index.html" data-en="Home">الرئيسية</a> / <span data-en="Contact Us">اتصل بنا</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- معلومات الاتصال -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Get in Touch">تواصل معنا</h2>
+                <p class="section-subtitle" data-en="We're here to answer your questions and provide the cleaning solutions you need">نحن هنا للإجابة على أسئلتك وتقديم حلول التنظيف التي تحتاجها</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 data-en="Phone">الهاتف</h3>
+                    <p>+123 456 7890</p>
+                    <p>+123 456 7891</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 data-en="Email">البريد الإلكتروني</h3>
+                    <p>info@cleaningcompany.com</p>
+                    <p>support@cleaningcompany.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 data-en="Address">العنوان</h3>
+                    <p data-en="123 Main Street, City, Country">123 الشارع الرئيسي، المدينة، البلد</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 data-en="Working Hours">ساعات العمل</h3>
+                    <p data-en="Monday - Friday: 8:00 AM - 6:00 PM">الاثنين - الجمعة: 8:00 صباحًا - 6:00 مساءً</p>
+                    <p data-en="Saturday: 9:00 AM - 4:00 PM">السبت: 9:00 صباحًا - 4:00 مساءً</p>
+                    <p data-en="Sunday: Closed">الأحد: مغلق</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الاتصال والخريطة -->
+    <section class="contact-form-map">
+        <div class="container">
+            <div class="contact-form-map-grid">
+                <div class="contact-form-container enhanced-form">
+                    <div class="form-header">
+                        <div class="form-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h2 data-en="Send Us a Message">أرسل لنا رسالة</h2>
+                        <p data-en="Fill out the form below, and we'll get back to you as soon as possible.">املأ النموذج أدناه، وسنرد عليك في أقرب وقت ممكن.</p>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-en="Full Name">الاسم الكامل</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="name" name="name" placeholder="محمد أحمد" data-en-placeholder="John Doe" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-en="Email Address">البريد الإلكتروني</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" data-en="Phone Number">رقم الهاتف</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="+123 456 7890">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="service" data-en="Service Interested In">الخدمة التي تهتم بها</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-broom"></i>
+                                    <select id="service" name="service">
+                                        <option value="" data-en="Select a Service">اختر خدمة</option>
+                                        <option value="residential" data-en="Residential Cleaning">تنظيف المنازل</option>
+                                        <option value="commercial" data-en="Commercial Cleaning">تنظيف المكاتب والشركات</option>
+                                        <option value="furniture" data-en="Furniture & Upholstery Cleaning">تنظيف الأثاث والمفروشات</option>
+                                        <option value="post-construction" data-en="Post-Construction Cleaning">تنظيف ما بعد البناء</option>
+                                        <option value="other" data-en="Other">أخرى</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="preferred-date" data-en="Preferred Date (Optional)">التاريخ المفضل (اختياري)</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-calendar"></i>
+                                <input type="date" id="preferred-date" name="preferred-date">
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message" data-en="Message">الرسالة</label>
+                            <div class="input-with-icon textarea-icon">
+                                <i class="fas fa-comment-alt"></i>
+                                <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." data-en-placeholder="Write your message here..." required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            <label for="newsletter" data-en="Subscribe to our newsletter for cleaning tips and special offers">اشترك في نشرتنا الإخبارية للحصول على نصائح التنظيف والعروض الخاصة</label>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn btn-primary btn-lg" data-en="Send Message">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <div class="map-header">
+                        <div class="map-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h2 data-en="Our Location">موقعنا</h2>
+                        <p data-en="Visit us at our office or schedule a service call">قم بزيارتنا في مكتبنا أو جدول مكالمة خدمة</p>
+                    </div>
+                    <div class="map">
+                        <!-- يمكن استبدال هذا بخريطة Google Maps الفعلية -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789012345678!2d-123.45678901234567!3d12.345678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDIwJzQ0LjQiTiAxMjPCsDI3JzI0LjQiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-directions">
+                        <h3 data-en="Directions">الاتجاهات</h3>
+                        <p data-en="From Downtown: Take Main Street north for 2 miles, turn right on Oak Avenue. Our office is on the left side, across from Central Park.">من وسط المدينة: اتجه شمالاً في الشارع الرئيسي لمسافة 2 ميل، ثم انعطف يميناً في شارع البلوط. مكتبنا على الجانب الأيسر، مقابل الحديقة المركزية.</p>
+                        <p data-en="Parking available in front of the building and in the adjacent parking lot.">مواقف السيارات متوفرة أمام المبنى وفي ساحة انتظار السيارات المجاورة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Frequently Asked Questions">الأسئلة الشائعة</h2>
+                <p class="section-subtitle" data-en="Answers to common questions about contacting us and our services">إجابات على الأسئلة الشائعة حول الاتصال بنا وخدماتنا</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 data-en="How quickly will you respond to my inquiry?">ما مدى سرعة ردكم على استفساري؟</h3>
+                    <p data-en="We strive to respond to all inquiries within 24 hours during business days. For urgent matters, we recommend calling our customer service line directly.">نسعى للرد على جميع الاستفسارات في غضون 24 ساعة خلال أيام العمل. للأمور العاجلة، نوصي بالاتصال بخط خدمة العملاء لدينا مباشرة.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Can I get a quote over the phone?">هل يمكنني الحصول على عرض سعر عبر الهاتف؟</h3>
+                    <p data-en="Yes, we can provide preliminary quotes over the phone for standard services. However, for more accurate pricing, especially for larger projects or specialized cleaning services, we recommend scheduling an on-site assessment.">نعم، يمكننا تقديم عروض أسعار أولية عبر الهاتف للخدمات القياسية. ومع ذلك، للحصول على تسعير أكثر دقة، خاصة للمشاريع الأكبر أو خدمات التنظيف المتخصصة، نوصي بجدولة تقييم في الموقع.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Do you offer same-day service?">هل تقدمون خدمة في نفس اليوم؟</h3>
+                    <p data-en="We do offer same-day service based on availability. Please call our customer service line to check if we can accommodate your request for same-day service.">نقدم خدمة في نفس اليوم حسب التوفر. يرجى الاتصال بخط خدمة العملاء لدينا للتحقق مما إذا كان بإمكاننا تلبية طلبك للخدمة في نفس اليوم.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="What information should I provide when requesting a quote?">ما هي المعلومات التي يجب أن أقدمها عند طلب عرض سعر؟</h3>
+                    <p data-en="To provide you with the most accurate quote, it's helpful to include details such as the type of service needed, the size of the space (square footage), specific cleaning requirements, preferred schedule, and any special considerations. The more information you provide, the more accurate our quote will be.">لتزويدك بعرض سعر أكثر دقة، من المفيد تضمين تفاصيل مثل نوع الخدمة المطلوبة، وحجم المساحة (المساحة بالمتر المربع)، ومتطلبات التنظيف المحددة، والجدول الزمني المفضل، وأي اعتبارات خاصة. كلما قدمت المزيد من المعلومات، كان عرض السعر الخاص بنا أكثر دقة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready to Experience Our Cleaning Services?">هل أنت مستعد لتجربة خدمات التنظيف لدينا؟</h2>
+                <p data-en="Contact us today to schedule a cleaning service or request a free quote.">اتصل بنا اليوم لجدولة خدمة تنظيف أو طلب عرض سعر مجاني.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+1234567890" class="btn btn-primary" data-en="Call Now">اتصل الآن</a>
+                    <a href="#contactForm" class="btn btn-secondary scroll-to" data-en="Send a Message">أرسل رسالة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="cropped-cleaning-logo-01-4-170x67.png" alt="شعار شركة التنظيف" class="footer-logo">
+                    <p data-en="Professional cleaning services with the highest standards of quality and customer satisfaction">خدمات تنظيف احترافية بأعلى معايير الجودة ورضا العملاء</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-en="Quick Links">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home">الرئيسية</a></li>
+                        <li><a href="about.html" data-en="About Us">من نحن</a></li>
+                        <li><a href="services.html" data-en="Services">خدماتنا</a></li>
+                        <li><a href="contact.html" data-en="Contact Us">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3 data-en="Our Services">خدماتنا</h3>
+                    <ul>
+                        <li><a href="services.html#residential" data-en="Residential Cleaning">تنظيف المنازل</a></li>
+                        <li><a href="services.html#commercial" data-en="Commercial Cleaning">تنظيف المكاتب والشركات</a></li>
+                        <li><a href="services.html#furniture" data-en="Furniture & Upholstery">تنظيف الأثاث والمفروشات</a></li>
+                        <li><a href="services.html#post-construction" data-en="Post-Construction Cleaning">تنظيف ما بعد البناء</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-en="Contact Us">اتصل بنا</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@cleaningcompany.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="123 Main Street, City, Country">123 الشارع الرئيسي، المدينة، البلد</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright" data-en="© 2023 Cleaning Company. All Rights Reserved.">© 2023 شركة التنظيف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- سكريبت جافا سكريبت -->
+    <script src="js/script.js"></script>
+</body>
+</html>

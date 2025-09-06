@@ -37,7 +37,7 @@
 - يمكن تغيير الصور في مجلد `images/`.
 
 ## الترخيص
-جميع الحقوق محفوظة © 2023 شركة التنظيف المتميزة.
+جميع الحقوق محفوظة © 2025 شركة التنظيف الخاصه.
 
 ---
 
@@ -80,4 +80,4 @@ This project is a professional website for a cleaning company, supporting both A
 - Images can be changed in the `images/` folder.
 
 ## License
-All rights reserved © 2023 Professional Cleaning Company.# private-cleaning
+All rights reserved © 0225 Professional Cleaning Company.# private-cleaning

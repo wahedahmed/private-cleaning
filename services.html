@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlElement">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا | شركة التنظيف المتميزة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Tajawal للعربية و Poppins للإنجليزية -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="cropped-cleaning-logo-01-4-170x67.png" alt="شعار شركة التنظيف">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html" data-en="Home">الرئيسية</a></li>
+                    <li><a href="about.html" data-en="About Us">من نحن</a></li>
+                    <li><a href="services.html" class="active" data-en="Services">خدماتنا</a></li>
+                    <li><a href="contact.html" data-en="Contact Us">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="langToggle" onclick="toggleLanguage()">
+                    <span class="lang-text">English</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم البانر الرئيسي -->
+    <section class="page-banner">
+        <div class="container">
+            <h1 data-en="Our Services">خدماتنا</h1>
+            <div class="breadcrumbs">
+                <a href="index.html" data-en="Home">الرئيسية</a> / <span data-en="Services">خدماتنا</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الباقات والأسعار -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Packages & Pricing">باقاتنا وأسعارنا</h2>
+                <p class="section-subtitle" data-en="Affordable cleaning solutions for every budget">حلول تنظيف بأسعار مناسبة لكل ميزانية</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-en="Basic Package">الباقة الأساسية</h3>
+                        <div class="price">
+                            <span class="amount">199</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                        <p class="price-subtitle" data-en="Perfect for small apartments">مثالية للشقق الصغيرة</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li data-en="General cleaning of all rooms">تنظيف عام لجميع الغرف</li>
+                            <li data-en="Dusting and vacuuming">إزالة الغبار والتنظيف بالمكنسة</li>
+                            <li data-en="Bathroom cleaning">تنظيف الحمام</li>
+                            <li data-en="Kitchen surface cleaning">تنظيف أسطح المطبخ</li>
+                            <li class="not-included" data-en="Deep carpet cleaning">تنظيف السجاد العميق</li>
+                            <li class="not-included" data-en="Window cleaning">تنظيف النوافذ</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="contact.html" class="btn btn-primary" data-en="Book Now">احجز الآن</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge" data-en="Most Popular">الأكثر طلباً</div>
+                    <div class="pricing-header">
+                        <h3 data-en="Standard Package">الباقة القياسية</h3>
+                        <div class="price">
+                            <span class="amount">349</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                        <p class="price-subtitle" data-en="Ideal for regular homes">مثالية للمنازل العادية</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li data-en="All Basic Package services">جميع خدمات الباقة الأساسية</li>
+                            <li data-en="Deep carpet cleaning">تنظيف السجاد العميق</li>
+                            <li data-en="Window cleaning">تنظيف النوافذ</li>
+                            <li data-en="Furniture dusting and polishing">إزالة الغبار وتلميع الأثاث</li>
+                            <li data-en="Appliance exterior cleaning">تنظيف الأجهزة من الخارج</li>
+                            <li class="not-included" data-en="Sanitization & disinfection">التعقيم والتطهير</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="contact.html" class="btn btn-primary" data-en="Book Now">احجز الآن</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-en="Premium Package">الباقة المميزة</h3>
+                        <div class="price">
+                            <span class="amount">599</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                        <p class="price-subtitle" data-en="Complete solution for large homes">حل متكامل للمنازل الكبيرة</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li data-en="All Standard Package services">جميع خدمات الباقة القياسية</li>
+                            <li data-en="Sanitization & disinfection">التعقيم والتطهير</li>
+                            <li data-en="Inside cabinet cleaning">تنظيف الخزائن من الداخل</li>
+                            <li data-en="Upholstery cleaning">تنظيف المفروشات</li>
+                            <li data-en="Chandelier & light fixture cleaning">تنظيف الثريات وتركيبات الإضاءة</li>
+                            <li data-en="Balcony & patio cleaning">تنظيف الشرفة والفناء</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="contact.html" class="btn btn-primary" data-en="Book Now">احجز الآن</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <p data-en="* Prices may vary based on the size of the space and specific requirements. Contact us for a customized quote.">* قد تختلف الأسعار بناءً على حجم المساحة والمتطلبات الخاصة. اتصل بنا للحصول على عرض سعر مخصص.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- مقدمة الخدمات -->
+    <section class="services-intro">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Professional Cleaning Services">خدمات تنظيف احترافية</h2>
+                <p class="section-subtitle" data-en="Comprehensive cleaning solutions tailored to your specific needs">حلول تنظيف شاملة مصممة خصيصًا لتلبية احتياجاتك الخاصة</p>
+            </div>
+            <div class="intro-content">
+                <p data-en="At our cleaning company, we offer a wide range of professional cleaning services designed to meet the diverse needs of our clients. Whether you need residential cleaning for your home, commercial cleaning for your business, or specialized cleaning services, our team of trained professionals is ready to deliver exceptional results.">في شركة التنظيف لدينا، نقدم مجموعة واسعة من خدمات التنظيف الاحترافية المصممة لتلبية الاحتياجات المتنوعة لعملائنا. سواء كنت بحاجة إلى تنظيف سكني لمنزلك، أو تنظيف تجاري لعملك، أو خدمات تنظيف متخصصة، فإن فريقنا من المحترفين المدربين جاهز لتقديم نتائج استثنائية.</p>
+                <p data-en="We use advanced cleaning techniques, high-quality equipment, and eco-friendly products to ensure thorough cleaning while maintaining the safety of your family, employees, and the environment. Our services are customizable to fit your schedule, preferences, and specific requirements.">نستخدم تقنيات تنظيف متقدمة ومعدات عالية الجودة ومنتجات صديقة للبيئة لضمان التنظيف الشامل مع الحفاظ على سلامة عائلتك وموظفيك والبيئة. خدماتنا قابلة للتخصيص لتناسب جدولك وتفضيلاتك ومتطلباتك الخاصة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- خدمات التنظيف السكني -->
+    <section id="residential" class="service-detail">
+        <div class="container">
+            <div class="service-grid">
+                <div class="service-image">
+                    <img src="images/residential-cleaning.jpg" alt="تنظيف المنازل" data-en-alt="Residential Cleaning">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h2 data-en="Residential Cleaning">تنظيف المنازل</h2>
+                    <p data-en="Our residential cleaning services are designed to keep your home clean, healthy, and comfortable. We understand that every home is unique, which is why we offer customized cleaning plans to meet your specific needs and preferences.">خدمات التنظيف السكني لدينا مصممة للحفاظ على منزلك نظيفًا وصحيًا ومريحًا. نحن ندرك أن كل منزل فريد من نوعه، ولهذا السبب نقدم خطط تنظيف مخصصة لتلبية احتياجاتك وتفضيلاتك الخاصة.</p>
+                    <h3 data-en="Our Residential Cleaning Services Include:">تشمل خدمات التنظيف السكني لدينا:</h3>
+                    <ul class="service-list">
+                        <li data-en="Regular Cleaning: Scheduled cleaning services to maintain a consistently clean home">التنظيف المنتظم: خدمات تنظيف مجدولة للحفاظ على منزل نظيف باستمرار</li>
+                        <li data-en="Deep Cleaning: Thorough cleaning of all areas, including hard-to-reach spaces and neglected areas">التنظيف العميق: تنظيف شامل لجميع المناطق، بما في ذلك الأماكن التي يصعب الوصول إليها والمناطق المهملة</li>
+                        <li data-en="Move-In/Move-Out Cleaning: Comprehensive cleaning services for when you're moving into a new home or leaving your current one">تنظيف الانتقال: خدمات تنظيف شاملة عند الانتقال إلى منزل جديد أو مغادرة منزلك الحالي</li>
+                        <li data-en="Spring Cleaning: Seasonal deep cleaning to refresh your home">التنظيف الموسمي: تنظيف عميق موسمي لتجديد منزلك</li>
+                        <li data-en="Specialized Cleaning: Focused cleaning for specific areas like kitchens, bathrooms, or living rooms">التنظيف المتخصص: تنظيف مركز لمناطق محددة مثل المطابخ أو الحمامات أو غرف المعيشة</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" data-en="Request a Quote">اطلب عرض سعر</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خدمات التنظيف التجاري -->
+    <section id="commercial" class="service-detail bg-light">
+        <div class="container">
+            <div class="service-grid reverse">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h2 data-en="Commercial Cleaning">تنظيف المكاتب والشركات</h2>
+                    <p data-en="Our commercial cleaning services are designed to maintain a clean, healthy, and professional environment for your business. We understand the importance of a clean workspace for productivity, employee morale, and creating a positive impression on clients and visitors.">خدمات التنظيف التجاري لدينا مصممة للحفاظ على بيئة نظيفة وصحية واحترافية لعملك. نحن ندرك أهمية مساحة العمل النظيفة للإنتاجية ومعنويات الموظفين وخلق انطباع إيجابي لدى العملاء والزوار.</p>
+                    <h3 data-en="Our Commercial Cleaning Services Include:">تشمل خدمات التنظيف التجاري لدينا:</h3>
+                    <ul class="service-list">
+                        <li data-en="Office Cleaning: Regular cleaning services for offices of all sizes">تنظيف المكاتب: خدمات تنظيف منتظمة للمكاتب بجميع أحجامها</li>
+                        <li data-en="Retail Space Cleaning: Specialized cleaning for retail stores and showrooms">تنظيف المساحات التجارية: تنظيف متخصص للمتاجر وصالات العرض</li>
+                        <li data-en="Medical Facility Cleaning: Sanitization and disinfection services for healthcare facilities">تنظيف المرافق الطبية: خدمات التعقيم والتطهير للمرافق الصحية</li>
+                        <li data-en="Educational Institution Cleaning: Comprehensive cleaning for schools, colleges, and universities">تنظيف المؤسسات التعليمية: تنظيف شامل للمدارس والكليات والجامعات</li>
+                        <li data-en="Industrial Cleaning: Heavy-duty cleaning services for industrial facilities">التنظيف الصناعي: خدمات تنظيف شاقة للمرافق الصناعية</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" data-en="Request a Quote">اطلب عرض سعر</a>
+                </div>
+                <div class="service-image">
+                    <img src="images/commercial-cleaning.jpg" alt="تنظيف المكاتب والشركات" data-en-alt="Commercial Cleaning">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خدمات تنظيف الأثاث والمفروشات -->
+    <section id="furniture" class="service-detail">
+        <div class="container">
+            <div class="service-grid">
+                <div class="service-image">
+                    <img src="images/furniture-cleaning.jpg" alt="تنظيف الأثاث والمفروشات" data-en-alt="Furniture & Upholstery Cleaning">
+                </div>
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h2 data-en="Furniture & Upholstery Cleaning">تنظيف الأثاث والمفروشات</h2>
+                    <p data-en="Our furniture and upholstery cleaning services are designed to restore the beauty and extend the life of your furniture. We use specialized techniques and gentle yet effective cleaning solutions to remove dirt, stains, and allergens from various types of upholstery and furniture materials.">خدمات تنظيف الأثاث والمفروشات لدينا مصممة لاستعادة جمال أثاثك وإطالة عمره. نستخدم تقنيات متخصصة ومحاليل تنظيف لطيفة وفعالة لإزالة الأوساخ والبقع ومسببات الحساسية من أنواع مختلفة من المفروشات ومواد الأثاث.</p>
+                    <h3 data-en="Our Furniture & Upholstery Cleaning Services Include:">تشمل خدمات تنظيف الأثاث والمفروشات لدينا:</h3>
+                    <ul class="service-list">
+                        <li data-en="Sofa and Couch Cleaning: Deep cleaning for fabric, leather, and microfiber sofas and couches">تنظيف الأرائك: تنظيف عميق للأرائك المصنوعة من القماش والجلد والألياف الدقيقة</li>
+                        <li data-en="Carpet and Rug Cleaning: Professional cleaning for carpets and rugs of all types and sizes">تنظيف السجاد: تنظيف احترافي للسجاد بجميع أنواعه وأحجامه</li>
+                        <li data-en="Mattress Cleaning: Sanitization and deep cleaning for mattresses to remove allergens and dust mites">تنظيف المراتب: تعقيم وتنظيف عميق للمراتب لإزالة مسببات الحساسية وعث الغبار</li>
+                        <li data-en="Curtain and Drapery Cleaning: Specialized cleaning for window treatments">تنظيف الستائر: تنظيف متخصص لمعالجات النوافذ</li>
+                        <li data-en="Stain Removal: Targeted treatment for stubborn stains on upholstery and furniture">إزالة البقع: علاج مستهدف للبقع العنيدة على المفروشات والأثاث</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" data-en="Request a Quote">اطلب عرض سعر</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خدمات تنظيف ما بعد البناء -->
+    <section id="post-construction" class="service-detail bg-light">
+        <div class="container">
+            <div class="service-grid reverse">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h2 data-en="Post-Construction Cleaning">تنظيف ما بعد البناء</h2>
+                    <p data-en="Our post-construction cleaning services are designed to transform a construction site into a clean, safe, and ready-to-use space. We understand the unique challenges of cleaning after construction or renovation projects and have the expertise, equipment, and solutions to handle even the toughest cleaning tasks.">خدمات تنظيف ما بعد البناء لدينا مصممة لتحويل موقع البناء إلى مساحة نظيفة وآمنة وجاهزة للاستخدام. نحن ندرك التحديات الفريدة للتنظيف بعد مشاريع البناء أو التجديد ولدينا الخبرة والمعدات والحلول للتعامل مع أصعب مهام التنظيف.</p>
+                    <h3 data-en="Our Post-Construction Cleaning Services Include:">تشمل خدمات تنظيف ما بعد البناء لدينا:</h3>
+                    <ul class="service-list">
+                        <li data-en="Debris Removal: Clearing and disposing of construction debris and waste">إزالة الحطام: تنظيف والتخلص من حطام ونفايات البناء</li>
+                        <li data-en="Dust Removal: Thorough dusting of all surfaces, including hard-to-reach areas">إزالة الغبار: تنظيف شامل من الغبار لجميع الأسطح، بما في ذلك المناطق التي يصعب الوصول إليها</li>
+                        <li data-en="Surface Cleaning: Cleaning and polishing of floors, walls, windows, and fixtures">تنظيف الأسطح: تنظيف وتلميع الأرضيات والجدران والنوافذ والتركيبات</li>
+                        <li data-en="Sanitization: Disinfecting bathrooms, kitchens, and other areas">التعقيم: تطهير الحمامات والمطابخ والمناطق الأخرى</li>
+                        <li data-en="Final Detailing: Finishing touches to ensure the space is move-in ready">التفاصيل النهائية: اللمسات الأخيرة لضمان أن المساحة جاهزة للانتقال</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" data-en="Request a Quote">اطلب عرض سعر</a>
+                </div>
+                <div class="service-image">
+                    <img src="images/post-construction-cleaning.jpg" alt="تنظيف ما بعد البناء" data-en-alt="Post-Construction Cleaning">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خدمات إضافية -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Additional Services">خدمات إضافية</h2>
+                <p class="section-subtitle" data-en="Specialized cleaning solutions for specific needs">حلول تنظيف متخصصة لاحتياجات محددة</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-window-maximize"></i>
+                    </div>
+                    <h3 data-en="Window Cleaning">تنظيف النوافذ</h3>
+                    <p data-en="Professional window cleaning services for crystal-clear windows, including hard-to-reach windows and glass surfaces.">خدمات تنظيف النوافذ الاحترافية للحصول على نوافذ شديدة الوضوح، بما في ذلك النوافذ والأسطح الزجاجية التي يصعب الوصول إليها.</p>
+                    <a href="contact.html" class="btn btn-outline" data-en="Learn More">المزيد</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-air-freshener"></i>
+                    </div>
+                    <h3 data-en="Odor Removal">إزالة الروائح</h3>
+                    <p data-en="Effective odor elimination services to remove unpleasant smells from various sources, leaving your space fresh and clean.">خدمات إزالة الروائح الفعالة للتخلص من الروائح الكريهة من مصادر مختلفة، مما يترك مساحتك منعشة ونظيفة.</p>
+                    <a href="contact.html" class="btn btn-outline" data-en="Learn More">المزيد</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="Sanitization & Disinfection">التعقيم والتطهير</h3>
+                    <p data-en="Comprehensive sanitization and disinfection services to eliminate germs, bacteria, and viruses, creating a healthier environment.">خدمات تعقيم وتطهير شاملة للقضاء على الجراثيم والبكتيريا والفيروسات، مما يخلق بيئة أكثر صحة.</p>
+                    <a href="contact.html" class="btn btn-outline" data-en="Learn More">المزيد</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-en="Green Cleaning">التنظيف الأخضر</h3>
+                    <p data-en="Eco-friendly cleaning services using sustainable products and practices that are safe for your family and the environment.">خدمات تنظيف صديقة للبيئة باستخدام منتجات وممارسات مستدامة آمنة لعائلتك وللبيئة.</p>
+                    <a href="contact.html" class="btn btn-outline" data-en="Learn More">المزيد</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 data-en="Pressure Washing">التنظيف بالضغط</h3>
+                    <p data-en="High-pressure washing services for exterior surfaces, driveways, patios, and more to remove stubborn dirt and grime.">خدمات التنظيف بالضغط العالي للأسطح الخارجية والممرات والفناءات وغيرها لإزالة الأوساخ والأوساخ العنيدة.</p>
+                    <a href="contact.html" class="btn btn-outline" data-en="Learn More">المزيد</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 data-en="Green Cleaning">التنظيف الأخضر</h3>
+                    <p data-en="Environmentally friendly cleaning services using eco-friendly products and sustainable practices.">خدمات تنظيف صديقة للبيئة باستخدام منتجات صديقة للبيئة وممارسات مستدامة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Frequently Asked Questions">الأسئلة الشائعة</h2>
+                <p class="section-subtitle" data-en="Answers to common questions about our cleaning services">إجابات على الأسئلة الشائعة حول خدمات التنظيف لدينا</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 data-en="How often should I schedule professional cleaning services?">كم مرة يجب أن أجدول خدمات التنظيف الاحترافية؟</h3>
+                    <p data-en="The frequency of professional cleaning depends on various factors, including the size of your space, the number of occupants, and your specific needs. For residential cleaning, many clients opt for weekly, bi-weekly, or monthly services. For commercial spaces, daily or several times a week cleaning is often recommended. During your consultation, we can help determine the optimal cleaning schedule for your specific situation.">يعتمد تكرار التنظيف الاحترافي على عوامل مختلفة، بما في ذلك حجم المساحة الخاصة بك، وعدد الشاغلين، واحتياجاتك الخاصة. بالنسبة للتنظيف السكني، يختار العديد من العملاء خدمات أسبوعية أو نصف شهرية أو شهرية. بالنسبة للمساحات التجارية، غالبًا ما يوصى بالتنظيف اليومي أو عدة مرات في الأسبوع. خلال استشارتك، يمكننا المساعدة في تحديد جدول التنظيف الأمثل لحالتك الخاصة.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="What cleaning products do you use?">ما هي منتجات التنظيف التي تستخدمونها؟</h3>
+                    <p data-en="We use a combination of professional-grade cleaning products and eco-friendly alternatives. Our selection depends on the specific cleaning task and surface requirements. We prioritize products that are effective yet safe for your family, pets, employees, and the environment. If you have specific preferences or concerns about cleaning products, please let us know, and we can accommodate your requests.">نستخدم مجموعة من منتجات التنظيف ذات الجودة الاحترافية والبدائل الصديقة للبيئة. يعتمد اختيارنا على مهمة التنظيف المحددة ومتطلبات السطح. نحن نعطي الأولوية للمنتجات الفعالة ولكنها آمنة لعائلتك وحيواناتك الأليفة وموظفيك والبيئة. إذا كانت لديك تفضيلات أو مخاوف محددة بشأن منتجات التنظيف، يرجى إخبارنا، ويمكننا تلبية طلباتك.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Are your cleaning staff trained and insured?">هل موظفو التنظيف لديكم مدربون ومؤمن عليهم؟</h3>
+                    <p data-en="Yes, all our cleaning staff undergo comprehensive training before they begin working with clients. They are trained in proper cleaning techniques, safety protocols, and customer service. Additionally, our company is fully insured, providing liability coverage and protection for both our clients and employees. We also conduct background checks on all employees to ensure the safety and security of our clients.">نعم، يخضع جميع موظفي التنظيف لدينا لتدريب شامل قبل أن يبدأوا العمل مع العملاء. يتم تدريبهم على تقنيات التنظيف المناسبة وبروتوكولات السلامة وخدمة العملاء. بالإضافة إلى ذلك، شركتنا مؤمنة بالكامل، مما يوفر تغطية المسؤولية والحماية لكل من عملائنا وموظفينا. نقوم أيضًا بإجراء فحوصات خلفية لجميع الموظفين لضمان سلامة وأمن عملائنا.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Do I need to provide cleaning supplies and equipment?">هل أحتاج إلى توفير مستلزمات ومعدات التنظيف؟</h3>
+                    <p data-en="No, we bring all necessary cleaning supplies, equipment, and tools needed to complete the job effectively. Our professional-grade equipment and specialized cleaning solutions allow us to deliver superior results compared to standard household cleaning products. However, if you prefer that we use specific products you already have, we can accommodate this request.">لا، نحن نحضر جميع مستلزمات ومعدات وأدوات التنظيف اللازمة لإكمال المهمة بفعالية. تسمح لنا معداتنا ذات الجودة الاحترافية وحلول التنظيف المتخصصة بتقديم نتائج متفوقة مقارنة بمنتجات التنظيف المنزلية القياسية. ومع ذلك، إذا كنت تفضل أن نستخدم منتجات محددة لديك بالفعل، يمكننا تلبية هذا الطلب.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready to Experience Our Cleaning Services?">هل أنت مستعد لتجربة خدمات التنظيف لدينا؟</h2>
+                <p data-en="Contact us today to schedule a cleaning service or request a free quote.">اتصل بنا اليوم لجدولة خدمة تنظيف أو طلب عرض سعر مجاني.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary" data-en="Contact Us">اتصل بنا</a>
+                    <a href="contact.html" class="btn btn-secondary" data-en="Request a Quote">اطلب عرض سعر</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="cropped-cleaning-logo-01-4-170x67.png" alt="شعار شركة التنظيف" class="footer-logo">
+                    <p data-en="Professional cleaning services with the highest standards of quality and customer satisfaction">خدمات تنظيف احترافية بأعلى معايير الجودة ورضا العملاء</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-en="Quick Links">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home">الرئيسية</a></li>
+                        <li><a href="about.html" data-en="About Us">من نحن</a></li>
+                        <li><a href="services.html" data-en="Services">خدماتنا</a></li>
+                        <li><a href="contact.html" data-en="Contact Us">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3 data-en="Our Services">خدماتنا</h3>
+                    <ul>
+                        <li><a href="services.html#residential" data-en="Residential Cleaning">تنظيف المنازل</a></li>
+                        <li><a href="services.html#commercial" data-en="Commercial Cleaning">تنظيف المكاتب والشركات</a></li>
+                        <li><a href="services.html#furniture" data-en="Furniture & Upholstery">تنظيف الأثاث والمفروشات</a></li>
+                        <li><a href="services.html#post-construction" data-en="Post-Construction Cleaning">تنظيف ما بعد البناء</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-en="Contact Us">اتصل بنا</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@cleaningcompany.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="123 Main Street, City, Country">123 الشارع الرئيسي، المدينة، البلد</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright" data-en="© 2023 Cleaning Company. All Rights Reserved.">© 2023 شركة التنظيف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- سكريبت جافا سكريبت -->
+    <script src="js/script.js"></script>
+</body>
+</html>

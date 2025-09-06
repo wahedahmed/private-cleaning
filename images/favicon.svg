@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#1e3a8a" />
+  
+  <!-- Cleaning elements -->
+  <g fill="#ffffff">
+    <!-- Spray bottle -->
+    <path d="M20 42 L28 42 L30 30 L26 28 L22 30 L18 30 Z" />
+    
+    <!-- Bubbles -->
+    <circle cx="38" cy="24" r="4" />
+    <circle cx="44" cy="18" r="3" />
+    <circle cx="36" cy="16" r="2" />
+    
+    <!-- Sparkles -->
+    <path d="M42 36L44 40L46 36L44 32Z" />
+    <path d="M34 44L36 48L38 44L36 40Z" />
+  </g>
+  
+  <!-- Company initial (stylized C for Cleaning) -->
+  <path d="M32 15 A17 17 0 0 0 32 49" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" />
+</svg>

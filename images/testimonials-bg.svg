@@ -1,0 +1,49 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- تعريف التدرجات والأنماط -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <pattern id="quotes" width="200" height="200" patternUnits="userSpaceOnUse">
+      <text x="0" y="80" font-family="Georgia" font-size="120" fill="#0078d4" opacity="0.05">"</text>
+    </pattern>
+  </defs>
+  
+  <!-- خلفية رئيسية -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  <rect width="100%" height="100%" fill="url(#quotes)"/>
+  
+  <!-- أشكال زخرفية خفيفة -->
+  <g opacity="0.1">
+    <!-- علامات اقتباس كبيرة -->
+    <text x="200" y="300" font-family="Georgia" font-size="200" fill="#0078d4">"</text>
+    <text x="1600" y="800" font-family="Georgia" font-size="200" fill="#0078d4">"</text>
+    
+    <!-- دوائر زخرفية -->
+    <circle cx="400" cy="400" r="100" fill="none" stroke="#0078d4" stroke-width="2"/>
+    <circle cx="1500" cy="700" r="150" fill="none" stroke="#0078d4" stroke-width="2"/>
+    
+    <!-- خطوط متقطعة -->
+    <line x1="0" y1="500" x2="500" y2="500" stroke="#0078d4" stroke-width="1" stroke-dasharray="10,10"/>
+    <line x1="1420" y1="300" x2="1920" y2="300" stroke="#0078d4" stroke-width="1" stroke-dasharray="10,10"/>
+  </g>
+  
+  <!-- نجوم متناثرة -->
+  <g opacity="0.2">
+    <!-- نجوم خماسية -->
+    <path d="M100,200 L107,215 L123,215 L110,225 L115,240 L100,230 L85,240 L90,225 L77,215 L93,215 Z" fill="#0078d4"/>
+    <path d="M1800,300 L1807,315 L1823,315 L1810,325 L1815,340 L1800,330 L1785,340 L1790,325 L1777,315 L1793,315 Z" fill="#0078d4"/>
+    <path d="M300,900 L307,915 L323,915 L310,925 L315,940 L300,930 L285,940 L290,925 L277,915 L293,915 Z" fill="#0078d4"/>
+    <path d="M1600,800 L1607,815 L1623,815 L1610,825 L1615,840 L1600,830 L1585,840 L1590,825 L1577,815 L1593,815 Z" fill="#0078d4"/>
+    <path d="M900,150 L907,165 L923,165 L910,175 L915,190 L900,180 L885,190 L890,175 L877,165 L893,165 Z" fill="#0078d4"/>
+    <path d="M1200,950 L1207,965 L1223,965 L1210,975 L1215,990 L1200,980 L1185,990 L1190,975 L1177,965 L1193,965 Z" fill="#0078d4"/>
+  </g>
+  
+  <!-- خطوط موجية خفيفة في الخلفية -->
+  <path d="M0,50 C300,100 600,0 900,50 C1200,100 1500,0 1800,50 L1920,50 L1920,0 L0,0 Z" 
+        fill="#e1e8f0" opacity="0.7"/>
+  <path d="M0,1030 C300,980 600,1080 900,1030 C1200,980 1500,1080 1800,1030 L1920,1030 L1920,1080 L0,1080 Z" 
+        fill="#e1e8f0" opacity="0.7"/>
+</svg>

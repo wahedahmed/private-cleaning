@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlElement">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة التنظيف المتميزة | خدمات تنظيف احترافية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Tajawal للعربية و Poppins للإنجليزية -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="cropped-cleaning-logo-01-4-170x67.png" alt="شعار شركة التنظيف">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html" class="active" data-en="Home">الرئيسية</a></li>
+                    <li><a href="about.html" data-en="About Us">من نحن</a></li>
+                    <li><a href="services.html" data-en="Services">خدماتنا</a></li>
+                    <li><a href="contact.html" data-en="Contact Us">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button id="langToggle" onclick="toggleLanguage()">
+                    <span class="lang-text">English</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم البانر الرئيسي -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-en="Professional Cleaning Services for Your Home & Office">خدمات تنظيف احترافية لمنزلك ومكتبك</h1>
+                <p class="hero-description" data-en="We provide high-quality cleaning services with professional standards and modern techniques">نقدم خدمات تنظيف عالية الجودة بمعايير احترافية وتقنيات حديثة</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary" data-en="Our Services">خدماتنا</a>
+                    <a href="contact.html" class="btn btn-secondary" data-en="Request a Quote">اطلب عرض سعر</a>
+                </div>
+            </div>
+            <div class="testimonial-cta">
+                <p data-en="Join our satisfied customers and experience the difference.">انضم إلى عملائنا الراضين واختبر الفرق.</p>
+                <a href="contact.html" class="btn btn-primary" data-en="Get a Quote Today">احصل على عرض سعر اليوم</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عملية التنظيف -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Cleaning Process">عملية التنظيف لدينا</h2>
+                <p class="section-subtitle" data-en="How we deliver exceptional cleaning results every time">كيف نقدم نتائج تنظيف استثنائية في كل مرة</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                        <span class="process-number">1</span>
+                    </div>
+                    <h3 data-en="Initial Assessment">التقييم الأولي</h3>
+                    <p data-en="We start with a thorough assessment of your space to understand your specific cleaning needs and requirements.">نبدأ بتقييم شامل لمساحتك لفهم احتياجات ومتطلبات التنظيف الخاصة بك.</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="fas fa-tasks"></i>
+                        <span class="process-number">2</span>
+                    </div>
+                    <h3 data-en="Customized Plan">خطة مخصصة</h3>
+                    <p data-en="We create a tailored cleaning plan based on your specific requirements, space size, and condition.">نقوم بإنشاء خطة تنظيف مخصصة بناءً على متطلباتك المحددة وحجم المساحة وحالتها.</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="fas fa-spray-can"></i>
+                        <span class="process-number">3</span>
+                    </div>
+                    <h3 data-en="Professional Execution">تنفيذ احترافي</h3>
+                    <p data-en="Our trained team executes the cleaning plan using professional equipment and eco-friendly products.">يقوم فريقنا المدرب بتنفيذ خطة التنظيف باستخدام معدات احترافية ومنتجات صديقة للبيئة.</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="fas fa-check-circle"></i>
+                        <span class="process-number">4</span>
+                    </div>
+                    <h3 data-en="Quality Inspection">فحص الجودة</h3>
+                    <p data-en="We conduct a thorough quality check to ensure every area meets our high standards of cleanliness.">نجري فحصًا شاملاً للجودة للتأكد من أن كل منطقة تلبي معاييرنا العالية للنظافة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشركاء والعملاء -->
+    <section class="partners-clients-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Partners & Clients">شركاؤنا وعملاؤنا</h2>
+                <p class="section-subtitle" data-en="Trusted by leading businesses and organizations">موثوق به من قبل الشركات والمؤسسات الرائدة</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-item">
+                    <img src="images/partner-1.png" alt="شعار الشريك" data-en-alt="Partner Logo">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-2.png" alt="شعار الشريك" data-en-alt="Partner Logo">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-3.png" alt="شعار الشريك" data-en-alt="Partner Logo">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-4.png" alt="شعار الشريك" data-en-alt="Partner Logo">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-5.png" alt="شعار الشريك" data-en-alt="Partner Logo">
+                </div>
+                <div class="partner-item">
+                    <img src="images/partner-6.png" alt="شعار الشريك" data-en-alt="Partner Logo">
+                </div>
+            </div>
+            <div class="clients-list">
+                <div class="client-category">
+                    <h3 data-en="Hotels & Hospitality">الفنادق والضيافة</h3>
+                    <ul>
+                        <li data-en="Al Madar Grand Hotel">فندق المدار الكبير</li>
+                        <li data-en="Sunrise Resort & Spa">منتجع وسبا صن رايز</li>
+                        <li data-en="Royal Palace Hotel">فندق القصر الملكي</li>
+                    </ul>
+                </div>
+                <div class="client-category">
+                    <h3 data-en="Corporate Offices">المكاتب التجارية</h3>
+                    <ul>
+                        <li data-en="Al Noor Business Tower">برج النور للأعمال</li>
+                        <li data-en="Future Technologies Inc.">شركة تقنيات المستقبل</li>
+                        <li data-en="Global Finance Center">مركز التمويل العالمي</li>
+                    </ul>
+                </div>
+                <div class="client-category">
+                    <h3 data-en="Healthcare Facilities">المرافق الصحية</h3>
+                    <ul>
+                        <li data-en="Al Shifa Medical Center">مركز الشفاء الطبي</li>
+                        <li data-en="Wellness Clinic">عيادة العافية</li>
+                        <li data-en="Modern Dental Care">الرعاية الحديثة للأسنان</li>
+                    </ul>
+                </div>
+                <div class="client-category">
+                    <h3 data-en="Educational Institutions">المؤسسات التعليمية</h3>
+                    <ul>
+                        <li data-en="Al Mostaqbal University">جامعة المستقبل</li>
+                        <li data-en="Knowledge Academy">أكاديمية المعرفة</li>
+                        <li data-en="International School">المدرسة الدولية</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Frequently Asked Questions">الأسئلة الشائعة</h2>
+                <p class="section-subtitle" data-en="Find answers to common questions about our cleaning services">اعثر على إجابات للأسئلة الشائعة حول خدمات التنظيف لدينا</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="What cleaning services do you offer?">ما هي خدمات التنظيف التي تقدمونها؟</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="We offer a comprehensive range of cleaning services including residential cleaning, commercial cleaning, deep cleaning, post-construction cleaning, carpet and upholstery cleaning, window cleaning, and specialized cleaning services tailored to your specific needs.">نقدم مجموعة شاملة من خدمات التنظيف بما في ذلك تنظيف المنازل، التنظيف التجاري، التنظيف العميق، تنظيف ما بعد البناء، تنظيف السجاد والمفروشات، تنظيف النوافذ، وخدمات التنظيف المتخصصة المصممة لتلبية احتياجاتك الخاصة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="How often should I schedule cleaning services?">كم مرة يجب أن أحدد مواعيد خدمات التنظيف؟</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="The frequency of cleaning services depends on your specific needs and preferences. We offer flexible scheduling options including weekly, bi-weekly, monthly, or one-time cleaning services. Our team can help you determine the best schedule based on your space size, usage, and cleanliness requirements.">تعتمد وتيرة خدمات التنظيف على احتياجاتك وتفضيلاتك الخاصة. نحن نقدم خيارات جدولة مرنة بما في ذلك التنظيف الأسبوعي، نصف الشهري، الشهري، أو خدمات التنظيف لمرة واحدة. يمكن لفريقنا مساعدتك في تحديد أفضل جدول بناءً على حجم المساحة واستخدامها ومتطلبات النظافة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="Are your cleaning products eco-friendly?">هل منتجات التنظيف الخاصة بكم صديقة للبيئة؟</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="Yes, we prioritize the use of eco-friendly and non-toxic cleaning products that are safe for your family, pets, and the environment. Our green cleaning solutions effectively remove dirt, germs, and allergens without harsh chemicals. If you have specific product preferences or sensitivities, please let us know, and we'll accommodate your needs.">نعم، نحن نعطي الأولوية لاستخدام منتجات التنظيف الصديقة للبيئة وغير السامة التي تعتبر آمنة لعائلتك وحيواناتك الأليفة والبيئة. حلول التنظيف الخضراء لدينا تزيل الأوساخ والجراثيم والمواد المسببة للحساسية بفعالية دون مواد كيميائية قاسية. إذا كانت لديك تفضيلات أو حساسيات معينة للمنتجات، يرجى إخبارنا، وسنلبي احتياجاتك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="How do you ensure quality control?">كيف تضمنون مراقبة الجودة؟</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="We maintain strict quality control through our comprehensive training program, detailed cleaning checklists, regular inspections, and customer feedback systems. Our cleaning teams are supervised, and we conduct quality checks after each service. We also welcome your feedback and will promptly address any concerns to ensure your complete satisfaction.">نحافظ على مراقبة صارمة للجودة من خلال برنامج التدريب الشامل، وقوائم التحقق التفصيلية للتنظيف، والتفتيش المنتظم، وأنظمة ملاحظات العملاء. تتم الإشراف على فرق التنظيف لدينا، ونجري فحوصات الجودة بعد كل خدمة. نرحب أيضًا بملاحظاتك وسنعالج أي مخاوف على الفور لضمان رضاك التام.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="Do I need to provide cleaning supplies?">هل أحتاج إلى توفير مستلزمات التنظيف؟</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="No, we bring all necessary professional-grade cleaning supplies, equipment, and products needed for your service. Our teams arrive fully prepared with everything required to deliver exceptional cleaning results. However, if you prefer that we use specific products you already have, we're happy to accommodate your request.">لا، نحن نحضر جميع مستلزمات التنظيف والمعدات والمنتجات ذات المستوى الاحترافي اللازمة لخدمتك. تصل فرقنا مستعدة تمامًا بكل ما هو مطلوب لتقديم نتائج تنظيف استثنائية. ومع ذلك، إذا كنت تفضل أن نستخدم منتجات محددة لديك بالفعل، فنحن سعداء بتلبية طلبك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="How do I get a price quote for cleaning services?">كيف يمكنني الحصول على عرض سعر لخدمات التنظيف؟</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="You can request a free price quote by contacting us through our website, phone, or email. For accurate pricing, we typically conduct a brief assessment of your space either in person or through detailed information you provide. Factors that influence pricing include the size of the area, type of cleaning needed, frequency of service, and any special requirements.">يمكنك طلب عرض سعر مجاني عن طريق الاتصال بنا من خلال موقعنا الإلكتروني أو الهاتف أو البريد الإلكتروني. للحصول على تسعير دقيق، نقوم عادةً بإجراء تقييم موجز لمساحتك إما شخصيًا أو من خلال معلومات مفصلة تقدمها. تشمل العوامل التي تؤثر على التسعير حجم المنطقة، ونوع التنظيف المطلوب، وتكرار الخدمة، وأي متطلبات خاصة.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cta">
+                <p data-en="Don't see your question here? Contact us for more information.">لم تجد سؤالك هنا؟ اتصل بنا للحصول على مزيد من المعلومات.</p>
+                <a href="contact.html" class="btn btn-primary" data-en="Contact Us">اتصل بنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم دعوة للعمل -->
+    <section class="main-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready for a Cleaner, Healthier Environment?">هل أنت مستعد لبيئة أنظف وأكثر صحة؟</h2>
+                <p data-en="Experience the difference professional cleaning can make. Our team is ready to transform your space.">اختبر الفرق الذي يمكن أن تحدثه خدمات التنظيف الاحترافية. فريقنا مستعد لتحويل مساحتك.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg" data-en="Get a Free Quote">احصل على عرض سعر مجاني</a>
+                    <a href="tel:+966123456789" class="btn btn-outline btn-lg" data-en="Call Us Now">اتصل بنا الآن</a>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span data-en="100% Satisfaction Guarantee">ضمان الرضا 100%</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span data-en="Eco-Friendly Products">منتجات صديقة للبيئة</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span data-en="Experienced Professionals">محترفون ذوو خبرة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم خدماتنا -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Services">خدماتنا</h2>
+                <p class="section-subtitle" data-en="Comprehensive cleaning solutions for all your needs">حلول تنظيف شاملة لجميع احتياجاتك</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 data-en="Residential Cleaning">تنظيف المنازل</h3>
+                    <p data-en="Complete home cleaning services including deep cleaning, regular maintenance, and specialized cleaning">خدمات تنظيف منزلية كاملة تشمل التنظيف العميق والصيانة الدورية والتنظيف المتخصص</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 data-en="Commercial Cleaning">تنظيف المكاتب والشركات</h3>
+                    <p data-en="Professional cleaning services for offices, retail spaces, and commercial buildings">خدمات تنظيف احترافية للمكاتب والمحلات التجارية والمباني التجارية</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3 data-en="Furniture & Upholstery">تنظيف الأثاث والمفروشات</h3>
+                    <p data-en="Specialized cleaning for furniture, carpets, and upholstery using advanced techniques">تنظيف متخصص للأثاث والسجاد والمفروشات باستخدام تقنيات متقدمة</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3 data-en="Post-Construction Cleaning">تنظيف ما بعد البناء</h3>
+                    <p data-en="Thorough cleaning services after construction or renovation projects">خدمات تنظيف شاملة بعد مشاريع البناء أو التجديد</p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-primary" data-en="View All Services">عرض جميع الخدمات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم لماذا تختارنا -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Why Choose Us">لماذا تختارنا</h2>
+                <p class="section-subtitle" data-en="What makes our cleaning services stand out from the rest">ما يميز خدمات التنظيف لدينا عن الآخرين</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 data-en="Certified Professionals">محترفون معتمدون</h3>
+                    <p data-en="Our team consists of trained and certified cleaning professionals">فريقنا يتكون من محترفي تنظيف مدربين ومعتمدين</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-en="Eco-Friendly Products">منتجات صديقة للبيئة</h3>
+                    <p data-en="We use environmentally friendly cleaning products and techniques">نستخدم منتجات وتقنيات تنظيف صديقة للبيئة</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 data-en="Timely Service">خدمة في الوقت المناسب</h3>
+                    <p data-en="We value your time and ensure punctual service delivery">نحن نقدر وقتك ونضمن تقديم الخدمة في الموعد المحدد</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 data-en="Satisfaction Guaranteed">ضمان الرضا</h3>
+                    <p data-en="We're not satisfied until you are - 100% satisfaction guarantee">نحن لسنا راضين حتى تكون أنت راضيًا - ضمان الرضا 100%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Achievements">إنجازاتنا</h2>
+                <p class="section-subtitle" data-en="Numbers that reflect our success and dedication">أرقام تعكس نجاحنا وتفانينا</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label" data-en="Satisfied Clients">عميل راضٍ</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label" data-en="Years of Experience">سنوات من الخبرة</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label" data-en="Professional Staff">موظف محترف</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label" data-en="Customer Satisfaction">رضا العملاء</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشهادات والتقييمات -->
+    <section class="testimonials enhanced-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Client Testimonials">آراء العملاء</h2>
+                <p class="section-subtitle" data-en="What our clients say about our cleaning services">ما يقوله عملاؤنا عن خدمات التنظيف لدينا</p>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-item">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p data-en="The cleaning team was professional, thorough, and efficient. My home has never looked better! I've tried other cleaning services before, but none compare to the quality and attention to detail that this company provides.">كان فريق التنظيف محترفًا ودقيقًا وفعالًا. لم يبدُ منزلي أفضل من قبل! لقد جربت خدمات تنظيف أخرى من قبل، لكن لا شيء يقارن بالجودة والاهتمام بالتفاصيل التي تقدمها هذه الشركة.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-1.jpg" alt="صورة العميل" class="author-image" data-en-alt="Client Photo">
+                        <div class="author-details">
+                            <h4 data-en="Ahmed Mahmoud">أحمد محمود</h4>
+                            <p data-en="Residential Client">عميل سكني</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p data-en="We've been using their commercial cleaning services for our office building for over a year now. Consistently excellent results! Their team is reliable, flexible with our schedule, and always goes above and beyond our expectations.">نستخدم خدمات التنظيف التجارية الخاصة بهم لمبنى مكتبنا منذ أكثر من عام. نتائج ممتازة باستمرار! فريقهم موثوق به، ومرن مع جدولنا، ويتجاوز دائمًا توقعاتنا.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-2.jpg" alt="صورة العميل" class="author-image" data-en-alt="Client Photo">
+                        <div class="author-details">
+                            <h4 data-en="Noura Al-Sayed">نورا السيد</h4>
+                            <p data-en="Business Owner">صاحبة عمل</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p data-en="Their post-construction cleaning service saved us so much time and effort. The team was thorough and professional. They removed all traces of construction and made our space ready for immediate use. Highly recommended!">خدمة التنظيف بعد البناء وفرت علينا الكثير من الوقت والجهد. كان الفريق دقيقًا ومحترفًا. لقد أزالوا جميع آثار البناء وجعلوا مساحتنا جاهزة للاستخدام الفوري. أوصي بشدة!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-3.jpg" alt="صورة العميل" class="author-image" data-en-alt="Client Photo">
+                        <div class="author-details">
+                            <h4 data-en="Khalid Ibrahim">خالد إبراهيم</h4>
+                            <p data-en="Construction Manager">مدير بناء</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم العروض الخاصة -->
+    <section class="special-offers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Special Offers">عروض خاصة</h2>
+                <p class="section-subtitle" data-en="Limited time offers on our premium cleaning services">عروض محدودة على خدمات التنظيف المميزة لدينا</p>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge" data-en="SAVE 20%">خصم 20%</div>
+                    <h3 data-en="New Customer Special">عرض خاص للعملاء الجدد</h3>
+                    <p data-en="Get 20% off your first cleaning service when you sign up for a recurring cleaning plan">احصل على خصم 20% على خدمة التنظيف الأولى عند الاشتراك في خطة تنظيف متكررة</p>
+                    <a href="contact.html" class="btn btn-primary" data-en="Claim Offer">احصل على العرض</a>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge" data-en="BUNDLE">حزمة</div>
+                    <h3 data-en="Complete Home Package">حزمة المنزل الكاملة</h3>
+                    <p data-en="Book our complete home cleaning package and get carpet cleaning at half price">احجز حزمة تنظيف المنزل الكاملة واحصل على تنظيف السجاد بنصف السعر</p>
+                    <a href="contact.html" class="btn btn-primary" data-en="Claim Offer">احصل على العرض</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Frequently Asked Questions">الأسئلة الشائعة</h2>
+                <p class="section-subtitle" data-en="Find answers to common questions about our cleaning services">اعثر على إجابات للأسئلة الشائعة حول خدمات التنظيف لدينا</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="How often should I schedule professional cleaning?">كم مرة يجب أن أجدول التنظيف الاحترافي؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="The frequency depends on your specific needs. For homes, we recommend bi-weekly or monthly cleaning. For offices, weekly cleaning is often ideal. We can help you determine the best schedule based on your space and requirements.">يعتمد التكرار على احتياجاتك الخاصة. بالنسبة للمنازل، نوصي بالتنظيف كل أسبوعين أو شهريًا. بالنسبة للمكاتب، غالبًا ما يكون التنظيف الأسبوعي مثاليًا. يمكننا مساعدتك في تحديد أفضل جدول زمني بناءً على مساحتك ومتطلباتك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="What cleaning products do you use?">ما هي منتجات التنظيف التي تستخدمونها؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="We use high-quality, eco-friendly cleaning products that are effective yet safe for your family, pets, and the environment. If you have specific product preferences or sensitivities, we're happy to accommodate your needs.">نستخدم منتجات تنظيف عالية الجودة وصديقة للبيئة وفعالة ولكنها آمنة لعائلتك وحيواناتك الأليفة والبيئة. إذا كانت لديك تفضيلات أو حساسيات معينة للمنتجات، فنحن سعداء بتلبية احتياجاتك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="Do I need to be home during the cleaning service?">هل يجب أن أكون في المنزل أثناء خدمة التنظيف؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="No, you don't need to be present. Many of our clients provide us with a key or access code. We ensure the security of your property and can arrange for key pickup and drop-off if needed.">لا، لست بحاجة إلى التواجد. يزودنا العديد من عملائنا بمفتاح أو رمز وصول. نحن نضمن أمان ممتلكاتك ويمكننا ترتيب استلام المفتاح وتسليمه إذا لزم الأمر.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-cta">
+                <a href="contact.html" class="btn btn-secondary" data-en="Have More Questions?">هل لديك المزيد من الأسئلة؟</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 data-en="Get in Touch">تواصل معنا</h2>
+                    <p data-en="Have questions or ready to schedule a cleaning service? Contact us today!">هل لديك أسئلة أو مستعد لجدولة خدمة تنظيف؟ اتصل بنا اليوم!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+123 456 7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@cleaningcompany.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-en="123 Main Street, City, Country">123 الشارع الرئيسي، المدينة، البلد</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 data-en="Request a Quote">اطلب عرض سعر</h3>
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="الاسم الكامل" data-en-placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="البريد الإلكتروني" data-en-placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required placeholder="رقم الهاتف" data-en-placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected data-en="Select Service">اختر الخدمة</option>
+                                <option value="residential" data-en="Residential Cleaning">تنظيف المنازل</option>
+                                <option value="commercial" data-en="Commercial Cleaning">تنظيف المكاتب والشركات</option>
+                                <option value="furniture" data-en="Furniture & Upholstery">تنظيف الأثاث والمفروشات</option>
+                                <option value="post-construction" data-en="Post-Construction Cleaning">تنظيف ما بعد البناء</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required placeholder="رسالتك" data-en-placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-en="Submit Request">إرسال الطلب</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="cropped-cleaning-logo-01-4-170x67.png" alt="شعار شركة التنظيف" class="footer-logo">
+                    <p data-en="Professional cleaning services with the highest standards of quality and customer satisfaction">خدمات تنظيف احترافية بأعلى معايير الجودة ورضا العملاء</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-en="Quick Links">روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html" data-en="Home">الرئيسية</a></li>
+                        <li><a href="about.html" data-en="About Us">من نحن</a></li>
+                        <li><a href="services.html" data-en="Services">خدماتنا</a></li>
+                        <li><a href="contact.html" data-en="Contact Us">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3 data-en="Our Services">خدماتنا</h3>
+                    <ul>
+                        <li><a href="services.html#residential" data-en="Residential Cleaning">تنظيف المنازل</a></li>
+                        <li><a href="services.html#commercial" data-en="Commercial Cleaning">تنظيف المكاتب والشركات</a></li>
+                        <li><a href="services.html#furniture" data-en="Furniture & Upholstery">تنظيف الأثاث والمفروشات</a></li>
+                        <li><a href="services.html#post-construction" data-en="Post-Construction Cleaning">تنظيف ما بعد البناء</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-en="Contact Us">اتصل بنا</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@cleaningcompany.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="123 Main Street, City, Country">123 الشارع الرئيسي، المدينة، البلد</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright" data-en="© 2025 Cleaning Company. All Rights Reserved.">© 2025 شركة التنظيف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- سكريبت جافا سكريبت -->
+    <script src="js/script.js"></script>
+    <script>
+        // تفعيل وظيفة الأسئلة الشائعة
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    // تبديل حالة العنصر النشط
+                    this.parentElement.classList.toggle('active');
+                    
+                    // تغيير أيقونة الزائد/الناقص
+                    const icon = this.querySelector('.faq-icon i');
+                    if (icon.classList.contains('fa-plus')) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    } else {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                    
+                    // عرض/إخفاء الإجابة
+                    const answer = this.nextElementSibling;
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
